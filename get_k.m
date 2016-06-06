@@ -1,4 +1,5 @@
 %get wave number 'k'
-function k = get_k(w,D)
-y = @(x) 9.8*x*tanh(x*D)-w;
-k = fsolve(y,0);
+function k = Get_k(omega,D)
+y = @(x) 9.8*x*tanh(x*D)-omega;
+opt=optimset('Display','off');
+k = fsolve(y,0,opt);
