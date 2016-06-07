@@ -1,4 +1,5 @@
 % Main
+close all
 clear all
 clc
 % known constant
@@ -32,14 +33,4 @@ hz2 = @(z) C(2)*exp(B1*z) + C(3)*exp(-B1*z) + A*( i*sinh(k*(Depth-z))*Fx + cosh(
 hz3 = @(z) C(4)*exp(-B2*z);
 
 % Plot hz
-z = -Depth:1:1;
-plot(abs(hz1(z)),z)
-set(gca,'YDir','reverse')
-hold on
-z = 0:1:Depth;
-plot(abs(hz2(z)),z)
-hold on
-z = Depth:1:2*Depth;
-plot(abs(hz3(z)),z)
-grid on
-hold off
+Plot_hz(hz1,hz2,hz3,Depth)
