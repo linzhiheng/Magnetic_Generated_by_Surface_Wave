@@ -1,6 +1,6 @@
 % Plot hz
 function Plot_hz(hz1,hz2,hz3,D)
-z = -D:1:1;
+z = -D:1:0;
 plot(abs(hz1(z)),z)
 set(gca,'YDir','reverse')
 hold on

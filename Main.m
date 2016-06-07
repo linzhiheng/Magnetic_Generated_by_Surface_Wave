@@ -4,7 +4,7 @@ clear all
 clc
 % known constant
 gravity = 9.8;
-Depth = 50;
+Depth = 100;
 amplitude = 1;
 angularFrequency = 0.6;
 
