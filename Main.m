@@ -7,7 +7,7 @@ clc
 gravity = 9.8;
 Depth = 1000;
 amplitude = 1;
-angularFrequency = 0.2;
+angularFrequency = 0.2*2*pi;
 
 permeability = 1.2566*10^-6;
 waterConductivity = 5;
